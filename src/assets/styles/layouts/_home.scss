@@ -34,7 +34,7 @@ body {
   max-width: 200px;
   height: auto;
 
-  @media (min-width: $mqMinWidth) {
+  @media (min-width: $mq-min-width) {
     max-width: none;
   }
 }
@@ -45,7 +45,7 @@ body {
   font-weight: 700;
   color: $uoc-corporate;
 
-  @media (min-width: $mqMinWidth) {
+  @media (min-width: $mq-min-width) {
     font-size: 36px;
   }
 }
