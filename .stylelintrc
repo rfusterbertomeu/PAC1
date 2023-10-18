@@ -1,6 +1,13 @@
 { 
     "extends": ["stylelint-config-standard-scss"],
     "rules": {
-        "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
+        "color-function-notation": "modern",
+        "color-hex-length": "short", 
+        "declaration-block-single-line-max-declarations": 1, 
+        "length-zero-no-unit": true,
+        "selector-attribute-quotes": "always",
+        "selector-class-pattern": [
+            "^([a-z][a-z0-9]*)(-[a-z][a-z0-9]*)?(__[a-z][a-z0-9]*)?(--[a-z][a-z0-9]*)?$"
+        ]
     } 
 }
