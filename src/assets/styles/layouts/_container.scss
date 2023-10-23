@@ -1,9 +1,45 @@
 .container {
-  .row {
-    .column {
-      &__title {}
+  padding: 2rem;
 
-      &__image {}
+  &__titol {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+
+    @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
+      font-size: 30px;
+    }
+
+    @media (min-width: $mq-min-desktop-width) {
+      font-size: 36px;
+    }
+  }
+
+  .row {
+    // Box model
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+
+    @media (min-width: $mq-min-desktop-width) {
+      flex-direction: row;
+    }
+
+    // Visual
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%),
+    0 2px 4px -1px rgb(0 0 0 / 6%);
+
+    .bloc {
+      &__titol {
+        text-align: left;
+      }
+
+      &__imatge {}
 
       &__text {}
     }

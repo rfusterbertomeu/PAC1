@@ -1,10 +1,16 @@
 @use "sass:color";
 
+// Tipografia
 $font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
   "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
-$blog-primary: #476C77;
-$blog-secondary: #EDF4F4;
-$uoc-bg: color.scale($blog-secondary, $lightness: 70%);
-$mq-min-width: 420px;
+$blog-primary: #476c77;
+$blog-secondary: #edf4f4;
+$blog-bg: color.scale($blog-secondary, $lightness: 70%);
+
+// Media Query mides
+$mq-max-mobile-width: 767px;
+$mq-min-tablet-width: 768px;
+$mq-max-tablet-width: 1023px;
+$mq-min-desktop-width: 1024px;

@@ -1,6 +1,32 @@
 .header {
-    // Header styles here
-    &__title {
-      // Header title styles here
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__link {
+    font: $font-family-sans-serif ;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: $blog-secondary;
+    text-align: center;
+    text-decoration: none;
+
+    @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
+      font-size: 36px;
+    }
+
+    @media (min-width: $mq-min-desktop-width) {
+      font-size: 40px;
+    }
+
+    &:hover {
+      color: invert($blog-secondary, 90%);
+      text-decoration: underline;
     }
   }
+
+  background-color: $blog-primary;
+}
