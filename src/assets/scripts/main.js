@@ -10,7 +10,7 @@
  * Write any other JavaScript below
  */
 axe.run({
-  runOnly: ['wcag2a', 'wcag2aa', 'best-practice']
+  runOnly: ['wcag2a', 'wcag2aa', 'wcag2aa', 'best-practice']
 },).then((results) => {
   // Analitzar els resultats
   if (results.violations.length > 0) {

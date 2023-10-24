@@ -4,6 +4,24 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-inline: 4rem;
+
+  @media (min-width: $mq-min-tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__titol {
+      order: 1;
+    }
+
+    &__nav {
+      order: 2;
+    }
+
+    &__menu {
+      display: flex;
+    }
+  }
 
   &__link {
     font: $font-family-sans-serif ;
@@ -23,18 +41,45 @@
     }
 
     &:hover {
-      color: invert($blog-secondary, 90%);
       text-decoration: underline;
+    }
+  }
 
+  &__menu {
+    list-style: none;
+    padding-inline: 0;
+
+    &-item{
+      // Box model
+      padding-inline: 0.5rem;
+
+      // Visual
+      text-decoration: none;
+    } 
+    
+    &-link{
+      // Tipografia
+      font-weight: 700;
+      color: $blog-secondary;
+      
+      // Visual
+      text-decoration: none;
+    
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
   &__device {
+    // Box model
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     margin-top: 10px;
-    margin-right: 15px;
+    margin-left: 15px;
+
+    // Tipografia
     font-size: 20px;
     color: $blog-secondary;
 
