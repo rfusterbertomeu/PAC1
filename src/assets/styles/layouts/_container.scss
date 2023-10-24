@@ -1,7 +1,4 @@
 .container {
-  padding-block: 1rem;
-  padding-inline: 2rem;
-
   &__titol {
     font-size: 24px;
     font-weight: 700;
@@ -23,13 +20,14 @@
     justify-content: center;
     align-items: center;
     margin-block: 1rem;
-    margin-inline: 0.5rem;
+    margin-inline: 3rem;
     padding-block: 1rem;
     padding-inline: 2rem;
 
     @media (min-width: $mq-min-desktop-width) {
       flex-direction: row;
       align-items: start;
+      height: 70vh;
     }
 
     // Visual
@@ -42,8 +40,13 @@
       // Box model
       display: flex;
       flex-direction: column;
-      margin-right: 0.5rem;
-      margin-left: 0.5rem;
+      align-items: center;
+      margin-inline: 0.5rem;
+      width: 100%;
+
+      @media (min-width: $mq-min-desktop-width) {
+        width: 50%;
+      }
 
       &__titol {
         text-align: center;
@@ -77,6 +80,14 @@
 
       &__text {
         text-align: justify;
+
+        @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
+          margin-inline: 15rem;
+        }
+
+        @media (min-width: $mq-min-desktop-width) {
+          margin-inline: 10rem;
+        }
       }
     }
   }

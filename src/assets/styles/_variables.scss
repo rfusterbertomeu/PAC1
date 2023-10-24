@@ -8,6 +8,7 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $blog-primary: #476c77;
 $blog-secondary: #edf4f4;
 $blog-bg: color.scale($blog-secondary, $lightness: 70%);
+$portada-bg: color.scale($blog-primary, $blackness: 15%);
 
 // Media Query mides
 $mq-max-mobile-width: 767px;

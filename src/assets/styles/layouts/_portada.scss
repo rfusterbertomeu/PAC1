@@ -1,0 +1,45 @@
+.portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: $portada-bg;
+
+  @media (min-width: $mq-min-tablet-width) {
+    flex-flow: row;
+  }
+
+
+
+  &__bloc {
+    background-color: $portada-bg;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+
+    @media (min-width: $mq-min-tablet-width) {
+      width: 50%;
+    }
+  }
+
+  &__imatge {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__text {
+    padding-inline: 1rem;
+    padding-block: 8rem;
+    font-weight: bold;
+    text-align: center;
+
+    @media (min-width: $mq-min-tablet-width) {
+      padding-block: 9rem;
+    }
+  }
+}

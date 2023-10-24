@@ -23,5 +23,15 @@
       flex: 50%;
       display: inline;
     }
+
+    &-link {
+      font-weight: 700;
+      color: $blog-primary;
+      text-decoration: none;
+
+      &:hover {
+        color: rgb(0 0 0);
+      }
+    }
   }
 }
