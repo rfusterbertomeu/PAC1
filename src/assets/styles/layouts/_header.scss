@@ -39,7 +39,6 @@
     color: $blog-secondary;
 
     @media (max-width: $mq-max-mobile-width) {
-
       &--hidden-tablet,
       &--hidden-desktop {
         display: none;
@@ -47,7 +46,6 @@
     }
 
     @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
-
       &--hidden-mobile,
       &--hidden-desktop {
         display: none;
@@ -55,7 +53,6 @@
     }
 
     @media (min-width: $mq-min-desktop-width) {
-
       &--hidden-mobile,
       &--hidden-tablet {
         display: none;
