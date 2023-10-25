@@ -1,16 +1,16 @@
 .container {
   &__titol {
     // Tipografia
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     text-align: center;
 
     @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
-      font-size: 30px;
+      font-size: 36px;
     }
 
     @media (min-width: $mq-min-desktop-width) {
-      font-size: 36px;
+      font-size: 40px;
     }
   }
 
@@ -21,14 +21,20 @@
     justify-content: center;
     align-items: center;
     margin-block: 1rem;
-    margin-inline: 3rem;
+    margin-inline: 1rem;
     padding-block: 1rem;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
+
+    @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
+      margin-inline: 2rem;
+      padding-inline: 2rem;
+    }
 
     @media (min-width: $mq-min-desktop-width) {
       flex-direction: row;
       align-items: start;
-      height: 70vh;
+      margin-inline: 3rem;
+      padding-inline: 3rem;
     }
 
     // Visual
@@ -42,17 +48,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       margin-inline: 0.5rem;
       width: 100%;
 
       @media (min-width: $mq-min-desktop-width) {
         width: 50%;
       }
+      
+      // Tipografia
+      text-align: center;
 
       &__titol {
-        // Tipografia
-        text-align: center;
-
         @media (min-width: $mq-min-desktop-width) {
           text-align: right;
         }
@@ -60,14 +67,14 @@
 
       &__imatge {
         // Box model
-        width: 250px;
+        width: 100%;
 
         // Visual
         border-radius: 20px;
 
         @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
           // Box model
-          width: 300px;
+          width: 40%;
 
           // Visual
           border-radius: 30px;
@@ -76,11 +83,11 @@
         @media (min-width: $mq-min-desktop-width) {
           // Box model
           &--margin-top {
-            margin-top: 5rem;
+            margin-top: 1rem;
           }
 
-          width: 350px;
-          
+          width: 70%;
+
           // Visual
           border-radius: 50px;
         }
@@ -91,11 +98,11 @@
         text-align: justify;
 
         @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
-          margin-inline: 15rem;
+          margin-inline: 10rem;
         }
 
         @media (min-width: $mq-min-desktop-width) {
-          margin-inline: 10rem;
+          margin-inline: 5rem;
         }
       }
     }

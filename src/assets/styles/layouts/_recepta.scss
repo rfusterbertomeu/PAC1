@@ -25,11 +25,16 @@
 
     @media (min-width: $mq-min-tablet-width) {
       flex: 50%;
-      display: inline;
+      display:
+       inline;
+    }
+
+    // Tipografia
+    &-llista {
+      text-align: justify;
     }
 
     &-link {
-      // Tipografia
       font-weight: 700;
       color: $blog-primary;
       text-decoration: none;
