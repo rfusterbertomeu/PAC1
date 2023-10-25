@@ -1,5 +1,6 @@
 .container {
   &__titol {
+    // Tipografia
     font-size: 24px;
     font-weight: 700;
     text-align: center;
@@ -49,6 +50,7 @@
       }
 
       &__titol {
+        // Tipografia
         text-align: center;
 
         @media (min-width: $mq-min-desktop-width) {
@@ -64,21 +66,28 @@
         border-radius: 20px;
 
         @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
+          // Box model
           width: 300px;
+
+          // Visual
           border-radius: 30px;
         }
 
         @media (min-width: $mq-min-desktop-width) {
+          // Box model
           &--margin-top {
             margin-top: 5rem;
           }
 
           width: 350px;
+          
+          // Visual
           border-radius: 50px;
         }
       }
 
       &__text {
+        // Tipografia
         text-align: justify;
 
         @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
