@@ -18,30 +18,30 @@
       text-align: left;
     }
   }
+}
 
-  &__seccio {
-    // Box Model
-    flex: 100%;
+.seccio {
+  // Box Model
+  flex: 100%;
 
-    @media (min-width: $mq-min-tablet-width) {
-      flex: 50%;
-      display:
-       inline;
-    }
+  @media (min-width: $mq-min-tablet-width) {
+    flex: 50%;
+    display:
+      inline;
+  }
 
-    // Tipografia
-    &-llista {
-      text-align: justify;
-    }
+  // Tipografia
+  &__llista {
+    text-align: justify;
+  }
 
-    &-link {
-      font-weight: 700;
-      color: $blog-primary;
-      text-decoration: none;
+  &__link {
+    font-weight: 700;
+    color: $blog-primary;
+    text-decoration: none;
 
-      &:hover {
-        color: rgb(0 0 0);
-      }
+    &:hover {
+      color: rgb(0 0 0);
     }
   }
 }

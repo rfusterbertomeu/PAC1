@@ -14,19 +14,17 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+}
+.fotografia {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  max-width: 100%;
 
-  &__figura {
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-    max-width: 100%;
-   
-    // Visual 
-    border-radius: 20px;
-  }
+  // Visual 
+  border-radius: 20px;
 
-  &__figcaption{
-     &-text{
-      text-align:center; 
-    }
+  &__text{
+    // Topografia
+    text-align: center;
   }
 }
 

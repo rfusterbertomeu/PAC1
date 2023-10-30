@@ -44,7 +44,7 @@
     font-weight: bold;
   }
   
-  &-link {
+  &__link {
     // Tipografia
     font-weight: 700;
     color: $blog-secondary;
@@ -56,7 +56,7 @@
       text-decoration: underline;
     }
   }
-  
+
   // Visual
   background-color: $portada-bg;
 }
