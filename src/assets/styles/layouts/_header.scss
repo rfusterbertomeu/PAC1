@@ -1,5 +1,4 @@
 .header {
-  // Box Model
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,25 +7,13 @@
   padding-inline: 4rem;
 
   @media (min-width: $mq-min-tablet-width) {
-    flex-direction: row;
     justify-content: right;
-
-    &__titol {
-      order: 1;
-    }
-
-    &__nav {
-      order: 2;
-    }
   }
 
   &__device {
-    // Posicionament
     position: fixed;
     top: 0;
     left: 0;
-
-    // Box model
     margin-top: 10px;
     margin-left: 15px;
 
@@ -49,44 +36,34 @@
       &--hidden-tablet {
         display: none;
       }
-    } 
+    }
 
-    // Tipografia
     font-size: 20px;
     color: $blog-secondary;
 
   }
-  
-  // Visual
+
   background-color: $blog-primary;
 }
 
 .menu {
-  // Box Model
   padding-inline: 0;
 
   @media (min-width: $mq-min-tablet-width) {
     display: flex;
+    flex-direction: row;
   }
 
-  // Visual
   list-style: none;
 
-
   &__item {
-    // Box model
     padding-inline: 0.5rem;
-
-    // Tipografia
     text-decoration: none;
   }
 
   &__link {
-    // Tipografia
     font-weight: 700;
     color: $blog-secondary;
-
-    // Visual
     text-decoration: none;
 
     &:hover {

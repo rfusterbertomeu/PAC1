@@ -1,5 +1,4 @@
 .recepta {
-  // Box model
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -8,10 +7,7 @@
   padding-block: 1rem;
 
   &__titol {
-    // Box Model
     flex: 100%;
-
-    // Tipografia
     text-align: center;
 
     @media (min-width: $mq-min-desktop-width) {
@@ -21,7 +17,6 @@
 }
 
 .seccio {
-  // Box Model
   flex: 100%;
 
   @media (min-width: $mq-min-tablet-width) {
@@ -29,7 +24,6 @@
     display: inline;
   }
 
-  // Tipografia
   &__llista {
     text-align: justify;
   }

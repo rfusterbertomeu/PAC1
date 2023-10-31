@@ -3,17 +3,12 @@
 }
 
 body {
-  // Box model
   height: 100vh;
   margin: 0;
   padding: 0;
-
-  // Tipografia
   font-family: $font-text;
   font-size: 16px;
   line-height: 24px;
   color: $blog-primary;
-
-  // Visual
   background-color: $blog-bg;
 }

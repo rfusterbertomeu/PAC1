@@ -1,6 +1,5 @@
 .container {
   &__titol {
-    // Tipografia
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -15,7 +14,6 @@
   }
 
   .row {
-    // Box model
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,14 +35,12 @@
       padding-inline: 3rem;
     }
 
-    // Visual
     border-radius: 2rem;
     background-color: #fff;
     box-shadow: 0 4px 6px -1px rgb(71 108 119 / 14%),
     0 2px 4px -1px rgb(71 108 119 / 10%);
 
     .bloc {
-      // Box model
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -55,8 +51,7 @@
       @media (min-width: $mq-min-desktop-width) {
         width: 50%;
       }
-      
-      // Tipografia
+
       text-align: center;
 
       &__titol {
@@ -66,35 +61,25 @@
       }
 
       &__imatge {
-        // Box model
         width: 100%;
-
-        // Visual
         border-radius: 20px;
 
         @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {
-          // Box model
           width: 40%;
-
-          // Visual
           border-radius: 30px;
         }
 
         @media (min-width: $mq-min-desktop-width) {
-          // Box model
           &--margin-top {
             margin-top: 1rem;
           }
 
           width: 70%;
-
-          // Visual
           border-radius: 50px;
         }
       }
 
       &__text {
-        // Tipografia
         text-align: justify;
 
         @media (min-width: $mq-min-tablet-width) and (max-width: $mq-max-tablet-width) {

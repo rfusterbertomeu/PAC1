@@ -1,5 +1,4 @@
 .portada {
-  // Box Model
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,44 +11,36 @@
   }
 
   &__bloc {
-    // Box Model
     flex-grow: 1;
     width: 100%;
-  
+
     @media (min-width: $mq-min-tablet-width) {
       width: 50%;
     }
 
-    // Tipografia
     text-align: center;
   }
 
   &__imatge {
-    // Box Model
-    width: 100%; 
-    height: 100%;      
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
   &__text {
-    // Box Model
     padding-block: 5rem;
 
     @media (min-width: $mq-min-tablet-width) {
       padding-block: 0;
     }
 
-    // Tipografia
     font-family: $font-title;
     font-weight: bold;
   }
-  
+
   &__link {
-    // Tipografia
     font-weight: 700;
     color: $blog-secondary;
-
-    // Visual
     text-decoration: none;
 
     &:hover {
@@ -57,6 +48,5 @@
     }
   }
 
-  // Visual
   background-color: $portada-bg;
 }
